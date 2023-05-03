@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color:black;
+}
+
+#logo {
+    float:left;
+    font-size:200%;
+}
+
+/* nav links */
+#menu {
+    font-size:100%;
+    letter-spacing:4px;
+}
+#menu, #logo {
+     line-height:50px;
+}
+
+#menu li {
+    float:right;
+    margin-right: 15px;
+    list-style-type: none;
+}
+
+#menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu a:hover {
+    border-bottom: 1px solid black;
+}
+
+/* yoga-image */
+
+#yoga-image {
+    height:600px;
+    width:110%;
+    background: url('../images/12-basic-yoga-poses-for-beginners.jpeg') no-repeat center center;
+}
+
+#yoga-outer{
+    height: 600px;
+        width: 110%;
+        overflow:hidden;
+}
