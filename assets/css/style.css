@@ -159,23 +159,23 @@ hr {
     margin-bottom: 50px;
 }
 
-.right-about-heading h2{
-text-align: right;
-}
-
-.right-about-heading p{
+.right-about-heading h2 {
     text-align: right;
 }
 
-#welcome{
+.right-about-heading p {
+    text-align: right;
+}
+
+#welcome {
     text-align: center;
     margin: 20px 0;
     foot-size: 280%;
 }
 
-#circle-container{
+#circle-container {
     width: 300px;
-    height:300px;
+    height: 300px;
     padding: 30px;
     border-style: solid;
     border-color: #ccc;
@@ -192,11 +192,27 @@ text-align: right;
 
 /* event times*/
 
-#times{
+#times {
     background-image: url('../images/dublin-city.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 100%;
     overflow: hidden;
+}
+
+#times div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .6);
+    width: 20%;
+    height: 300px;
+    float: left;
+    padding-top: 30px 0 0 10;
+    text-align: center;
+    border: 2px solid white;
+    border sizing: border-box;
+}
+
+#time h2{
+    color: #fafafa;
 }
