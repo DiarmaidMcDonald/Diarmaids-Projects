@@ -9,26 +9,33 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    color:black;
+    color:#3a3a3a;
+}
+
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #252525;
 }
 
 #logo {
     float:left;
-    font-size:200%;
+    font-size:280%;
 }
 
 /* nav links */
 #menu {
-    font-size:100%;
+    font-size:110%;
     letter-spacing:4px;
 }
 #menu, #logo {
-     line-height:50px;
+     line-height:75px;
 }
 
 #menu li {
     float:right;
-    margin-right: 15px;
+    margin-right: 30px;
     list-style-type: none;
 }
 
@@ -38,19 +45,65 @@ body {
 }
 
 #menu a:hover {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #3a3a3a;
 }
 
-/* yoga-image */
-
-#yoga-image {
-    height:600px;
-    width:110%;
-    background: url('../images/12-basic-yoga-poses-for-beginners.jpeg') no-repeat center center;
+.active{
+    border-bottom: 1px solid #3a3a3a;
 }
 
-#yoga-outer{
+/* hero-image */
+
+#hero-outer {
     height: 600px;
-        width: 110%;
-        overflow:hidden;
+    width: 100%;
+    overflow: hidden;
+
+    position: relative;
+}
+
+#cover-text, #cover-text h2 {
+color: #fff;
+
+}
+
+#hero-image {
+    height:600px;
+    width:100%;
+    background: url('../images/hero-image.webp') no-repeat center center;
+}
+
+/* annimation for hero image */
+animation-name: hero-zoom;
+animation-duration: 5s;
+animation-fill-mode: forwards;
+
+/* creates the zoom for the image */
+@keyframes hero-zoom{
+    from{
+transform: scale(1);
+    }
+    to{
+transform: scale(1.1);
+    }
+}
+
+#cover-text{
+    font-size: 130%;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+
+    width: 300px;
+    height: 200px;
+
+    padding-top: 40px;
+    padding-left: 10px;
+    background-color: rgba(241, 109, 107, .7);
+
+    bottom: 30px;
+    right: 150px;
+
+    position: absolute; 
 }
