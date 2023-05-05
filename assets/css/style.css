@@ -237,7 +237,7 @@ footer {
     color: #3a3a3a;
 }
 
-/* Gallery */
+/* gallery */
 
 #photos {
     clear: both;
@@ -294,7 +294,7 @@ footer {
 
 /* for medium screen sizes to 950px wide and down*/
 
-@media screen and (max-width 950px) {
+@media screen and (max-width: 950px) {
     #menu {
         clear: left;
         float: left;
@@ -305,7 +305,6 @@ footer {
 
     #cover-text {
         left: 0;
-
     }
 
     #club-ethos {
@@ -335,6 +334,8 @@ footer {
         column-count: 3;
     }
 }
+
+/* For small screen sizes 800px and down */
 
 @media screen and (max-width: 800px) {
     #photos {
